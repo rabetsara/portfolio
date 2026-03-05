@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de RABETSARA ANDRIANAVONY Finaritra — Étudiant L3 Informatique, Administration Réseau & Système, Cybersécurité, Madagascar." />
+  <meta property="og:title" content="Portfolio — RABETSARA ANDRIANAVONY Finaritra" />
+  <meta property="og:description" content="Administrateur Réseau & Système en formation, passionné de cybersécurité et virtualisation." />
+  <meta property="og:type" content="website" />
+  <title>Portfolio — RABETSARA ANDRIANAVONY Finaritra</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">GOLY</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Accueil</a></li>
+        <li><a href="#about" class="nav-link">À Propos</a></li>
+        <li><a href="#skills" class="nav-link">Compétences</a></li>
+        <li><a href="#projects" class="nav-link">Projets</a></li>
+        <li><a href="#experience" class="nav-link">Expériences</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary nav-cta">Me Contacter</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-content fade-up">
+        <p class="hero-greeting">Bonjour, je suis</p>
+        <h1 class="hero-name">RABETSARA<br><span>ANDRIANAVONY</span><br>Finaritra</h1>
+        <p class="hero-title">Étudiant en Informatique — <strong>L3 Administration Réseau & Système</strong></p>
+        <p class="hero-typewriter"><span id="typewriter"></span><span class="cursor">|</span></p>
+        <p class="hero-bio">Passionné par les réseaux, la cybersécurité et les infrastructures système, je construis des solutions robustes et sécurisées.</p>
+        <div class="hero-socials">
+          <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-outline">Voir mes Projets</a>
+          <a href="./cv/finaritra_cv.pdf" download class="btn btn-primary"><i class="fas fa-download"></i> Télécharger mon CV</a>
+          <a href="https://github.com/" target="_blank" class="btn btn-dark"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+      <div class="hero-image fade-up delay-2">
+        <div class="hero-img-wrapper">
+          <div class="hero-blob"></div>
+          <div class="hero-blob blob-2"></div>
+          <div class="profile-circle">
+            <img src="./image/1772102769607.png" alt="RABETSARA ANDRIANAVONY Finaritra" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="profile-placeholder"><i class="fas fa-user"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal">À Propos de Moi</h2>
+      <p class="section-subtitle reveal">Qui suis-je ?</p>
+      <div class="about-grid">
+        <div class="about-img reveal">
+          <div class="about-img-wrapper">
+            <div class="about-blob"></div>
+            <div class="profile-circle profile-circle--sm">
+              <img src="./image/IMG-20250707-WA0000.jpg" alt="Finaritra" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div class="profile-placeholder"><i class="fas fa-user"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal delay-1">
+          <p class="about-bio">Étudiant en <strong>L3 Informatique à l'INSI</strong> (Institut National Supérieur d'Informatique – Madagascar), spécialisé en <strong>Administration Réseau & Système et Base de Données</strong>. Passionné par la cybersécurité, la virtualisation et le déploiement d'infrastructures réseau sécurisées.</p>
+          <div class="about-cards">
+            <div class="about-card">
+              <i class="fas fa-shield-alt"></i>
+              <h4>Cybersécurité & Réseaux</h4>
+              <p>Sécurité Windows Server, IDS/IPS, Kali Linux, PfSense, VPN, Cisco Packet Tracer...</p>
+              <a href="#skills" class="read-more">En savoir plus →</a>
+            </div>
+            <div class="about-card">
+              <i class="fas fa-server"></i>
+              <h4>Systèmes & Virtualisation</h4>
+              <p>Linux Debian, Windows Server, VMware, Proxmox, Docker, Ansible, GitLab CI/CD...</p>
+              <a href="#skills" class="read-more">En savoir plus →</a>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Ans de formation</span></div>
+            <div class="stat"><span class="stat-num">20+</span><span class="stat-label">Projets réalisés</span></div>
+            <div class="stat"><span class="stat-num">4</span><span class="stat-label">Certifications</span></div>
+            <div class="stat"><span class="stat-num">5</span><span class="stat-label">Hackathons</span></div>
+          </div>
+          <div class="certifications">
+            <h4>Certifications</h4>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Maintenance et Réseau — <em>Nir'Info</em></li>
+              <li><i class="fas fa-check-circle"></i> Admin Réseau — <em>Nir'Info</em></li>
+              <li><i class="fas fa-check-circle"></i> Hacking Éthique Avancé — <em>CFT</em></li>
+              <li><i class="fas fa-check-circle"></i> Certificat Anglais Niveau 2 — <em>HYPM</em></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills section section--gray" id="skills">
+    <div class="container">
+      <h2 class="section-title reveal">Compétences Techniques</h2>
+      <p class="section-subtitle reveal">Technologies & outils maîtrisés</p>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+          <h3>Réseaux & Systèmes</h3>
+          <ul>
+            <li><strong>Windows Server</strong> : ADDS, IIS, WDS, HmailServer, BitLocker, sauvegarde</li>
+            <li><strong>Linux Debian 12</strong> : Samba4, Bind9, DHCP, Apache2, Nagios4, GLPI/OCS, Zabbix, Nextcloud</li>
+            <li><strong>Cisco Packet Tracer</strong> : OSPF, EIGRP, BGP, RIP, VLANs, ACL, NAT, VPN, VoIP, HSRP</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal delay-1">
+          <div class="skill-icon"><i class="fas fa-lock"></i></div>
+          <h3>Cybersécurité</h3>
+          <ul>
+            <li>Kali Linux</li>
+            <li>IDS/IPS, PfSense</li>
+            <li>Phishing & BeEF Labs</li>
+            <li>Sécurité Windows Server</li>
+            <li>Ethical Hacking (CTF)</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal delay-2">
+          <div class="skill-icon"><i class="fas fa-cubes"></i></div>
+          <h3>Virtualisation & DevOps</h3>
+          <ul>
+            <li>VMware, VirtualBox, Proxmox</li>
+            <li>Docker, Ansible</li>
+            <li>GitLab CI/CD</li>
+            <li>BorgBackup, Scripts Monitoring</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal delay-3">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <h3>Développement Web</h3>
+          <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>PHP</li>
+            <li>Responsive Design</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal">Mes Projets</h2>
+      <p class="section-subtitle reveal">Réalisations techniques & académiques</p>
+      <div class="filter-tabs reveal">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="windows">Windows Server</button>
+        <button class="filter-btn" data-filter="linux">Linux</button>
+        <button class="filter-btn" data-filter="cisco">Cisco</button>
+        <button class="filter-btn" data-filter="securite">Sécurité</button>
+        <button class="filter-btn" data-filter="devweb">Dev Web</button>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal" data-category="windows">
+          <div class="project-img"><i class="fab fa-windows"></i></div>
+          <div class="project-info">
+            <span class="project-badge windows">Windows Server</span>
+            <h4>Active Directory & ADDS</h4>
+            <p>Déploiement domaine Windows Server avec ADDS, GPO, WDS, gestion des utilisateurs.</p>
+            <div class="project-tags"><span>ADDS</span><span>GPO</span><span>WDS</span></div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-1" data-category="windows">
+          <div class="project-img"><i class="fas fa-envelope-open-text"></i></div>
+          <div class="project-info">
+            <span class="project-badge windows">Windows Server</span>
+            <h4>Serveur Mail & Web IIS</h4>
+            <p>HmailServer + IIS 10, serveur impression, BitLocker, sauvegarde Windows.</p>
+            <div class="project-tags"><span>IIS</span><span>HmailServer</span><span>BitLocker</span></div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-2" data-category="linux">
+          <div class="project-img"><i class="fab fa-linux"></i></div>
+          <div class="project-info">
+            <span class="project-badge linux">Linux Debian</span>
+            <h4>Infrastructure Debian</h4>
+            <p>Samba4, DNS Bind9, DHCP, OwnCloud/Nextcloud, Webmin, partage de fichiers.</p>
+            <div class="project-tags"><span>Samba4</span><span>Bind9</span><span>Nextcloud</span></div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="linux">
+          <div class="project-img"><i class="fas fa-chart-line"></i></div>
+          <div class="project-info">
+            <span class="project-badge linux">Linux Debian</span>
+            <h4>Supervision & Monitoring</h4>
+            <p>Nagios4, Zabbix, GLPI/OCS Inventory, BorgBackup, scripts de monitoring.</p>
+            <div class="project-tags"><span>Nagios4</span><span>Zabbix</span><span>BorgBackup</span></div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-1" data-category="linux">
+          <div class="project-img"><i class="fas fa-at"></i></div>
+          <div class="project-info">
+            <span class="project-badge linux">Linux Debian</span>
+            <h4>Messagerie Linux</h4>
+            <p>Serveur mail Postfix + Dovecot, sauvegarde BorgBackup avec cron.</p>
+            <div class="project-tags"><span>Postfix</span><span>Dovecot</span><span>BorgBackup</span></div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-2" data-category="cisco">
+          <div class="project-img"><i class="fas fa-route"></i></div>
+          <div class="project-info">
+            <span class="project-badge cisco">Cisco</span>
+            <h4>Routage Avancé</h4>
+            <p>OSPF, EIGRP, BGP, RIP, routage statique/dynamique sur Cisco Packet Tracer.</p>
+            <div class="project-tags"><span>OSPF</span><span>BGP</span><span>EIGRP</span></div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="cisco securite">
+          <div class="project-img"><i class="fas fa-shield-virus"></i></div>
+          <div class="project-info">
+            <span class="project-badge cisco">Cisco</span>
+            <h4>Sécurité Réseau Cisco</h4>
+            <p>ACL, NAT, VPN site-à-site, VLANs, Inter-VLAN Routing, HSRP.</p>
+            <div class="project-tags"><span>ACL</span><span>VPN</span><span>VLANs</span></div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-1" data-category="cisco">
+          <div class="project-img"><i class="fas fa-phone-alt"></i></div>
+          <div class="project-info">
+            <span class="project-badge cisco">Cisco</span>
+            <h4>VoIP Cisco + Asterisk</h4>
+            <p>Configuration VoIP Cisco, serveur Asterisk, softphone Zoiper, téléphonie IP.</p>
+            <div class="project-tags"><span>VoIP</span><span>Asterisk</span><span>Zoiper</span></div>
+          </div>
+        </div>
+
+        <div class="project-card project-card--featured reveal delay-2" data-category="linux securite">
+          <div class="project-img"><i class="fas fa-star"></i></div>
+          <div class="project-info">
+            <span class="project-badge featured">⭐ Grand Projet</span>
+            <h4>Infrastructure Sécurisée Complète</h4>
+            <p>Déploiement d'une infra réseau sécurisée sous Debian : DNS, DHCP, Web, pare-feu, OpenVPN, Samba, BorgBackup + cron, Scripts Monitoring, redondance.</p>
+            <div class="project-tags"><span>OpenVPN</span><span>PfSense</span><span>Debian</span><span>BorgBackup</span></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="projects-cta reveal">
+        <a href="https://github.com/" target="_blank" class="btn btn-primary btn-lg"><i class="fab fa-github"></i> Voir tous mes projets sur GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="experience section section--gray" id="experience">
+    <div class="container">
+      <h2 class="section-title reveal">Parcours & Expériences</h2>
+      <p class="section-subtitle reveal">Mon chemin académique et mes distinctions</p>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"><i class="fas fa-trophy"></i></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2025 & 2026</span>
+            <h4>Hackathon Web & CTF — INSI</h4>
+            <p>Coup de Cœur du jury + participation active aux épreuves CTF (Capture The Flag)</p>
+            <span class="timeline-badge badge-gold">🏆 Coup de Cœur</span>
+          </div>
+        </div>
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-dot"><i class="fas fa-medal"></i></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2024</span>
+            <h4>Data Day — INSI</h4>
+            <p>Compétition interne centrée sur l'analyse et la visualisation de données.</p>
+            <span class="timeline-badge badge-gold">🥇 1ère Place</span>
+          </div>
+        </div>
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-dot"><i class="fas fa-laptop-code"></i></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2022 – Présent</span>
+            <h4>L3 Informatique — INSI Madagascar</h4>
+            <p>Institut National Supérieur d'Informatique, spécialité Administration Réseau & Système et Base de Données.</p>
+            <span class="timeline-badge badge-blue">📚 En cours</span>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"><i class="fas fa-code"></i></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2023</span>
+            <h4>Hackathon Front End — INSI</h4>
+            <p>Compétition de développement front-end entre étudiants de l'INSI.</p>
+            <span class="timeline-badge badge-silver">🥈 2ème Place</span>
+          </div>
+        </div>
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2022</span>
+            <h4>BAC Série D</h4>
+            <p>Diplômé du Baccalauréat Série D avec mention.</p>
+            <span class="timeline-badge badge-blue">🎓 Diplômé</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal">Me Contacter</h2>
+      <p class="section-subtitle reveal">Un projet, une collaboration ou juste un bonjour ? Écrivez-moi !</p>
+      <div class="contact-wrapper">
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Nom complet</label>
+              <input type="text" placeholder="Votre nom" required />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="votre@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Sujet</label>
+            <input type="text" placeholder="Sujet de votre message" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Votre message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fas fa-paper-plane"></i> Envoyer le message
+          </button>
+          <p class="form-success" id="form-success">✅ Message envoyé avec succès !</p>
+        </form>
+        <div class="contact-info reveal delay-1">
+          <h3>RABETSARA ANDRIANAVONY Finaritra</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Ambohimanarina, TANA 6e Arrondissement </p>
+          <p><i class="fas fa-envelope"></i> rabetsarafinaritra@gmail.com</p>
+          <div class="contact-socials">
+            <a href="https://github.com/" target="_blank" class="social-btn github"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com/" target="_blank" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            <a href="#" target="_blank" class="social-btn facebook"><i class="fab fa-facebook-f"></i> Finaritra Andry Rabe</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 <strong>RABETSARA ANDRIANAVONY Finaritra</strong> — Tous droits réservés</p>
+      <p class="footer-sub">Étudiant INSI Madagascar | Admin Réseau & Système</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
